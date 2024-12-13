@@ -16,12 +16,28 @@
       <h1 class="header__title">PixelDomination</h1>
     </header>
     <main class="main">
-      <p>Добро пожаловать в PixelDomination! Творите, соревнуйтесь, побеждайте.</p>
-      <div class="buttons">
-        <button class="btn">Войти</button>
-        <a href="canvas.html" class="btn primary">Начать игру</a>
-        <a href="profile.html" class="btn">Мой профиль</a>
-      </div>
+      <section class="welcome">
+        <div class="container">
+          <p class="welcome__text">Добро пожаловать в PixelDomination! Творите, соревнуйтесь, побеждайте.</p>
+          <!-- <div class="welcome__buttons">
+            <button class="welcome__btn">Войти</button>
+            <a href="canvas.html" class="welcome__btn welcome__btn--primary">Начать игру</a>
+          </div> -->
+        </div>
+      </section>
+      <form class="form">
+        <span class="input-span">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" id="email"
+        /></span>
+        <span class="input-span">
+          <label for="password" class="label">Пароль</label>
+          <input type="password" name="password" id="password"
+        /></span>
+        <span class="span"><a href="#">Забыли пароль?</a></span>
+        <input class="submit" type="submit" value="Log in" />
+        <span class="span">Еще нет аккаунта? <a href="#">Зарегеструйтесь</a></span>
+      </form>  
     </main>
     <footer class="footer">
       <p>&copy; 2024 PixelDomination</p>
