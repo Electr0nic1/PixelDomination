@@ -19,7 +19,7 @@
       <aside class="best-work">
         <figure class="best-work__box">
           <img class="best-work__img" src="img/best.png" alt="фото лучшей работы за неделю">
-          <figcaption>Лучшый pixel arl за неделю</figcaption>
+          <figcaption>Лучшый pixel art за неделю</figcaption>
         </figure>
       </aside>
       <section class="welcome">
@@ -31,18 +31,34 @@
           </div> -->
         </div>
       </section>
-      <form class="form">
+      <form class="form form--active" id="login-form">
         <span class="input-span">
-          <label for="email" class="label">Email</label>
-          <input type="email" name="email" id="email"
-        /></span>
+          <label for="login-email" class="label">Email</label>
+          <input type="email" name="login-email" id="login-email" required/></span>
         <span class="input-span">
-          <label for="password" class="label">Пароль</label>
-          <input type="password" name="password" id="password"
-        /></span>
+          <label for="login-password" class="label">Пароль</label>
+          <input type="password" name="login-password" id="login-password" required/></span>
         <span class="span"><a href="#">Забыли пароль?</a></span>
         <input class="submit" type="submit" value="Log in" />
-        <span class="span">Еще нет аккаунта? <a href="#">Зарегеструйтесь</a></span>
+        <span class="span">Еще нет аккаунта? <button id="show-reg" type="button">Зарегеструйтесь</button></span>
+      </form>
+      
+      <form class="form" id="reg-form">
+        <span class="input-span">
+          <label for="reg-email" class="label">Email</label>
+          <input type="email" name="reg-email" id="reg-email" required/></span>
+        <span class="input-span">
+          <label for="reg-nickname" class="label">Никнейм</label>
+          <input type="text" name="reg-nickname" id="reg-nickname" required/></span>
+        <span class="input-span">
+          <label for="reg-password" class="label">Пароль</label>
+          <input type="password" name="reg-password" id="reg-password" required/></span>
+        <span class="input-span">
+          <label for="reg-confirm-password" class="label">Повторите пароль</label>
+          <input type="password" name="reg-confirm-password" id="reg-confirm-password" required/></span>
+        <span class="span"><a href="#">Забыли пароль?</a></span>
+        <input class="submit" type="submit" value="Sign up" />
+        <span class="span">Уже есть аккаунт? <button id="show-login" type="button">Войдите</button></span>
       </form>  
     </main>
     <footer class="footer">
@@ -50,6 +66,6 @@
     </footer>
   </div>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 </html>
