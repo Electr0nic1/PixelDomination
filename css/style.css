@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 50px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  border: none;
+  padding: 15px 30px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn.primary {
+  background: #007BFF;
+}
+
+.footer {
+  min-height: 50px;
+  color: #777;
+}
+
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#pixel-canvas {
+  border: 1px solid #ddd;
+  image-rendering: pixelated; 
+  cursor: crosshair; 
+}
+
+#canvas-container {
+  margin: 20px;
+  position: relative;
+}
+
+#pixel-canvas {
+  border: 1px solid #ddd;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+
+.controls {
+  margin: 20px;
+}
+
+.controls input, .controls button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#palette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.color:hover {
+  outline: 2px solid #000;
+}
+
+canvas {
+  border: 1px solid #000;
+}
