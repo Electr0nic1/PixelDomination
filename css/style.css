@@ -67,6 +67,28 @@ body {
   background: #007BFF;
 }
 
+.best-work__box {
+  position: fixed;
+  top: 300px;
+  left: 70px;
+  width: 300px;
+  height: 180px;
+}
+
+.best-work__img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.best-work__img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 .form {
   margin: 0 auto;
   --bg-light: #ffeff9;
